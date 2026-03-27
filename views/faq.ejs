@@ -1,0 +1,33 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:white;
+	background:black;
+}
+h1{
+	color: black;
+}
+h2{
+	color:red;
+}
+</style>
+<header class="jumbotron"><h1>Query Answers can be added here </h1>
+	<ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+<a class="btn btn-primary btn-large" href="/faq"><b>Back to ask questions</b></a>
+</ul></header>
+<br>
+ <div class="container">
+ 	<h1><b><%= faq.question %><b></h1>
+<hr style="border-top: 1px solid black">
+<% faq.answer.forEach(function(answer){ %>
+  <p style="white-space: pre-line"><h2>--><b><%= answer %></b></h2></p>
+  <hr style="border-top: 1px solid black">
+<% }) %>
+
+
+	<form method="POST" action="/addans">
+                    			<input type="text" style="visibility : hidden"name="faqId" value="<%= faq._id %>">
+                    	<h1><textarea name="answer" class="form-group" placeholder="Answer"></textarea></h1>
+                    	<button type="submit" class="btn btn-primary btn-lg">Post your answer</button>
+                    </form></div></html>

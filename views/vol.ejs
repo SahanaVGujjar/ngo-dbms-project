@@ -1,0 +1,28 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:white;
+	background:black;
+}</style>
+<header class="jumbotron"><h1>Volunteer Form</h1>
+<ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+<a class="btn btn-primary btn-large" href="/logout"><b>Log out</b></a></ul></header>
+	<br>
+	<div class="container">
+<form action="/vol" method="POST">
+	 <div class="form-group">
+<label for="Fullname">Full Name:</label>
+     <input type="text" class="form-control" id="fullname" name="fullname">
+     <label for="Mobile">Mobile:</label>
+     <input type="text" class="form-control" id="mobile" name="mobile">
+     <label for="Email">Email:</label>
+     <input type="email" class="form-control" id="email"  name="email">
+      <label for="DOB">DOB:</label>
+      <input type="date" class="form-control" id="dob" name="dob">
+      <label for="location">Location:</label>
+      <input type="text" class="form-control" id="location" name="location">
+     </div>
+<center><button type="Submit" class="btn btn-primary">Submit</button></center>
+</div></form>
+</html>

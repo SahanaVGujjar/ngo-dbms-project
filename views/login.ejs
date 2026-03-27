@@ -1,0 +1,38 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+header.jumbotron{
+	color:black;
+	background:#feb236;
+}
+h2{
+	background-color: #feb236;
+	font-size: 35px;
+	word-spacing: 6px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+p{
+	margin:0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color: black;
+}
+pa{
+	float: right;
+}
+</style>
+<header class="jumbotron"><h1>Login</h1>
+<pa><ul><a class="btn btn-primary btn-lg" href="/register"><b>Register here..if not registered</b></a>
+<a class="btn btn-primary btn-lg" href="/home"><b>Get back to home page</b></a></pa></header>
+	<div class="container">
+<form action="/login" method="POST">
+<p><u>Username</u></p><input type="text" class="form-control" id="username" name="username" placeholder="Enter your Username"><br>
+<p><u>Password</u></p><input type="password"  class="form-control" id="password" name="password" placeholder="Enter your Password"><br><br>
+<button type="Submit" class="btn btn-primary">Login</button>
+</form><br></div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h2><center>SVG NGO<span class="glyphicon">&#xe005;</span></center></h2>
+</html>

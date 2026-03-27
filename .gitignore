@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Secrets and local config
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# MongoDB local data (if present)
+data/
+
+# Local scratch / notes (not needed to run the app)
+i need.txt
+do.txt
+ngo.txt
+need2.txt
+info.txt
+mongod
+
+# Optional local artifacts (exclude from repo)
+synopsis.docx
+page.html
+vol.html
+
+# Duplicate copies at repo root (templates live under views/)
+/services.ejs
+/vol.ejs

@@ -1,0 +1,40 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background:url(hands5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+}
+.box{
+	width: 320px;
+	height:420px;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	top: 60%;
+	left: 50%;                                                                    
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+
+}
+.avatar
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+button{
+	float: right;
+	background-color: white;
+	height: 35px;
+	width: 100px;
+   color: black;
+   font-size: 30px;
+   text-decoration: none;
+   border-radius: 7px;
+}

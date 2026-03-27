@@ -1,0 +1,28 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:white;
+	background:black;
+}</style>
+<header class="jumbotron"><h1>Please Join to Work with us</h1>
+	<ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+<a class="btn btn-primary btn-large" href="/logout"><b>Log out</b></a></ul></header>
+<br>
+<div class="container">
+<form action="/emp" method="POST">
+	 <div class="form-group">
+<label for="Fullname">Full Name:</label>
+     <input type="text" class="form-control" id="fullname" name="fullname">
+     <label for="Occupation">Occupation:</label>
+     <input type="text" class="form-control" id="occupation" name="occupation">
+      <label for="designationreq"> Designation Required:</label><br>
+      <input type="text" class="form-control" id="designationreq" name="designationreq">
+       <label for="Mobile">Mobile:</label>
+     <input type="text" class="form-control" id="mobile" name="mobile">
+     <label for="Email">Email:</label>
+     <input type="email" class="form-control" id="email"  name="email">
+     </div>
+<center><button type="Submit" class="btn btn-primary">Submit</button></center>
+</div></form>
+</html>

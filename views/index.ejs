@@ -1,0 +1,110 @@
+<% include partials/header %>
+<style>
+body{
+  background:black;
+}
+</style>
+<style>
+h3{
+  color:white;
+}
+h2{
+  color: black;
+  font-size: 40px;
+}
+h1{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  word-spacing: 6px;
+  font-size: 40px;
+  color:  #feb236;
+  -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+</style>
+<h1><center>SVG NGO<span class="glyphicon">&#xe005;</span><br> It’s not a job.    It’s an adventure.   Help Drive Change.</center>
+</h1>
+<div class="topnav"><a href="/home"><b>Home</b></a>
+<a href="/faq"><b>FAQ</b></a>
+
+<% if(user){ %>
+<% if(user.role!= "admin"){ %>
+<a href="/contact"><b>Contact Us</b></a>
+<% } %>
+<% } %>
+
+
+<% if(!user){ %>
+
+<a href="/contact"><b>Contact Us</b></a>
+<a href="/join"><b>Login</b></a>
+
+<a href="/register"><b>Sign up</b></a>
+<%} else {%>
+
+
+<% if(user.role == "admin"){ %>
+
+<a  href="/addservice"><b>Add Events</b></a>
+<a  href="/budget"><b>budgets</b></a>
+
+<% } %>
+
+<a  href="/logout"><b>Log out</b></a>
+<%}%>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://html.crunchpress.com/be-human/images/t_slider_3.jpg" width="100%" height="auto" alt="New York">
+      <div class="carousel-caption">
+       <i><h1><b>Join Us</b></h1>
+        <h2><b>You make a difference by Joining Us.</b></h2></i>
+      </div>
+    </div>
+
+    <div class="item">
+    <img src="https://in.childhelpfoundation.in/assets/img/slide/Saving%20&%20Helping%20Children%20in%20Need%20-%20Child%20Help%20Foundation-NGO-9.jpg" width="100%" height="auto" alt="Chicago">
+      <div class="carousel-caption">
+       <i><h1><b>You can make a Better India</b></h1>
+        <h2><b>We Provide a Better Quality of Education through our NGO</b></h2></i>
+      </div>
+    </div>
+
+    <div class="item">
+     <center><img src="https://ichef.bbci.co.uk/news/624/cpsprodpb/02F4/production/_107765700_gettyimages-1029015430.jpg" height="100%" width="80%" alt="Los Angeles"></center>
+      <div class="carousel-caption">
+       <i><h1><b>“He who plants a tree. Plants a hope.” </b></h1>
+        <h2><b>Join Hands with Us</b></h2></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<h1><center><b>Who are we?</b></center></h1>
+<h3><b>We, Non Governmental Organisation as a platform, enable volunteers across 6 cities in India for causes like education, environment and community welfare.</b></h3>
+<h1><center><b>Passionate about education and our country?</b></center></h1>
+<h3><b>By joining with us,you can make a difference through children's education and civic programmes.</b></h3>
+</html>

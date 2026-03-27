@@ -1,0 +1,39 @@
+<% include partials/header %>
+
+<link rel="stylesheet" type="text/css" href="public /new.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:white;
+	background:black;
+}</style>
+<header class="jumbotron"><h1>Here are the List Of Events Available</h1>
+	<br>
+<ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+<a class="btn btn-primary btn-large" href="/faq"><b>FAQ</b></a>
+
+<a class="btn btn-primary btn-large" href="/contact"><b>Contact Us</b></a>
+
+<a class="btn btn-primary btn-large" href="/logout"><b>Log out</b></a>
+<form method="POST" action="/searchservices">
+	<input type="text" class="form-control" name="search" placeholder="🔍Search">
+</form>
+</ul><br>
+</header>
+
+<style>
+	header.a{
+		float: right;
+	}
+
+</style>
+
+
+<h2 style="white-space: pre-line, height:10px">
+ 	<b>Event:<%=service.NameOfService%></b><br>
+  <b>Event held in:<%=service.location%></b><br>
+ 	<b>Held On:<%=service.Date%></b><br>
+ 	<b>Descrition:<%=service.description%></p></b>
+
+ </h2><a class="btn btn-primary" href="/addvolevent/<%= service._id %>"><header class="a">Apply now</header></a>
+

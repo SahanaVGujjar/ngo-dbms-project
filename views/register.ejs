@@ -1,0 +1,30 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:black;
+	background:#feb236;
+}
+body{
+	background-color: #82b74b;
+}</style>
+<header class="jumbotron"><h1><u>Sign Up Form of SVG NGO</u>  :</h1></header>
+	<br>
+	<div class="container">
+<form action="/register" method="POST">
+	 <div class="form-group">
+<label for="username"><h3>Username:</h3></label>
+     <input type="text" class="form-control" id="username" placeholder="Enter your Username" name="username">
+     <label for="password"><h3>Password:</h3></label>
+     <input type="password" class="form-control" id="password" placeholder="Enter your Password" name="password">
+     <label for="name"><h3>Name:</h3></label>
+     <input type="text" class="form-control" id="name" placeholder="Enter your full name" name="name">
+<label for="email"><h3>Email:</h3></label>
+ <input type="email" class="form-control" id="email" placeholder="Enter your Email" name="email">
+ <label for="Phonenumber"><h3>Phoneno:</h3></label>
+<input type="text" class="form-control" id="Phonenumber" placeholder="Enter Your Phonenumber" name="Phonenumber"></div>
+<center><a class="btn btn-primary btn-lg" href="/login"><b>Login if already registered</b></center></a>
+<br>
+<center><button type="submit" class="btn btn-primary btn-lg">Submit</button></center>
+</div></form><br><br><br><br><br><br><br><br><br><br><br>
+<% include partials/footer %>

@@ -1,0 +1,62 @@
+<html>
+<title>FAQpage</title>
+<head>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+    color:black;
+    background:#feb236;
+}
+h2{
+    background-color: #feb236;
+    font-size: 30px;
+    word-spacing: 6px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+body{
+    background-color: #80ced6;
+}</style>
+<header class="jumbotron"><h1>FAQ Page</h1>
+    <ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+</ul></header>
+<div class="container ">
+
+	 <div class="panel-group" id="faqAccordion">
+<form method="POST" action="/addfaq">
+    <input class="form-control" type="text" name="question" placeholder="Enter Your Questions Here"><br>
+   <center><button type="submit" class="btn btn-primary btn-lg">Submit</button></center>
+</form>
+<% faqs.forEach(function(faq){%>
+        <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+                 <h4 class="panel-title">
+                    <a href="/faq/<%- faq._id %>" class="ing"><%= faq.question %></a>
+              </h4>
+
+            </div>
+            <div id="question0" class="panel-collapse collapse" style="height: 0px;">
+                <div class="panel-body">
+                     <h5><span class="label label-primary">Answer</span></h5>
+
+                    <%faq.answer.forEach(function(ans){%> 
+                    	<p>
+                    		<%= ans %>
+                    	</p>
+
+                    		<%});%>
+                    	
+                </div>
+            </div>
+        </div>
+<% });%>
+	 </div>
+
+
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!------ Include the above in your HEAD tag ---------->
+<h2><center>SVG NGO<span class="glyphicon">&#xe005;</span></center></h2>
+</html>
+</head></html>

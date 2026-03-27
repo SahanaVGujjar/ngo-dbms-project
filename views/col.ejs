@@ -1,0 +1,26 @@
+<% include partials/header %>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style>
+header.jumbotron{
+	color:white;
+	background:black;
+}</style>
+<header class="jumbotron"><h1>Please Fill the form to Join Us</h1>
+	<ul><a class="btn btn-primary btn-large" href="/home"><b>Home</b></a>
+<a class="btn btn-primary btn-large" href="/logout"><b>Log out</b></a></ul></header>
+<br>
+<div class="container">
+<form action="/col" method="POST">
+	 <div class="form-group">
+<label for="NameOfOrganisation">Name Of Organisation:</label>
+     <input type="text" class="form-control" id="NameOfOrganisation" name="nameoforganisation">
+     <label for="description">Description about the Organisation/Company:</label>
+     <input type="text" class="form-control" id="description" name="description">
+      <label for="ReasonForPartnership"> Reason For Partnership With Us:</label>
+      <input type="text" class="form-control" id="ReasonForPartnership" name="reasonforpartnership">
+      <label for="Location">Location:</label>
+      <input type="text" class="form-control" id="Location" name="location">
+     </div>
+<center><button type="Submit" class="btn btn-primary">Submit</button></center>
+</div></form>
+</html>
