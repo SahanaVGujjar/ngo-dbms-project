@@ -1,6 +1,6 @@
 # NGO Platform
 
-A full-stack web platform for a non-profit organisation: manage **community services**, **volunteers**, **donations**, **partnerships**, **staff interest**, **budget visibility**, and a living **FAQ**—all backed by **MongoDB** and secured with **login and admin roles**.
+A full-stack web platform for a non-profit organisation: manage **community services**, **volunteers**, **donations**, **partnerships**, **staff interest**, **budget visibility**, and a living **FAQ**. All backed by **MongoDB** and secured with **login and admin roles**.
 
 Whether you are pitching the project, onboarding a teammate, or revisiting it months later, this README is the map.
 
