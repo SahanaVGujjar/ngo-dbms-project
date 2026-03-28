@@ -176,21 +176,6 @@ Open **[http://localhost:3000](http://localhost:3000)** — you will be redirect
 
 ---
 
-## Contributing / coursework
-
-If this is a team assignment, agree on:
-
-- Branch naming and PR reviews  
-- Who owns the MongoDB backup or seed data  
-- A short **demo script** (register → login → add service → search → FAQ)
-
----
-
-## License
-
-Use and attribution per your institution’s coursework policy.
-
----
 
 **Built with:** Express · EJS · MongoDB · Passport · Mongoose  
 
